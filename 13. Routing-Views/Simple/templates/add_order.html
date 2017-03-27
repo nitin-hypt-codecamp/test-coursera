@@ -1,0 +1,16 @@
+<h2>Add New Order</h2>
+<div class="container">
+Order Id: <input type="text" ng-model="order.id"><br>
+Description: <input type="text" ng-model="order.description"><br>
+Quantity: <input type="text" ng-model="order.quantity"><br><br>
+<button type="button" ng-click="addOrder()">Add new</button>
+</div>
+<div class="container">
+Order Count: {{ orders.length }}
+<!-- <ul>
+  <li ng-repeat="item in orders">
+    <b>Id:</b> {{item.id}} - <b>Description</b> {{ item.description}}
+    - <b>Quantity: </b>{{item.quantity}}
+  </li>
+</ul> -->
+</div>

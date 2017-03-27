@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Basic</title>
+  </head>
+  <body>
+    <div id="target" greeting="hello">
+      <section>
+        Section 1
+        <article>Article 1</article>
+      </section>
+    </div>
+
+    <div id="targetng" ng-app="myTestApp">
+      <section>
+        Section 1
+        <article>Article 1</article>
+      </section>
+    </div>
+
+    <script type="text/javascript">
+      // This example describes step by step on the basics of how the angular
+      // framework binds the directives in HTML behind the scenes to the controller
+      // directives etc defined in the view model
+      var elem = document.getElementById('target')
+      console.log(elem);
+      console.log(elem.getAttribute('greeting'));
+
+      var elem1 = document.getElementById('targetng')
+      console.log(elem1);
+      // Similarly if we were the authors of Angular we would be able to read the
+      // value of any angular attribute like so
+      console.log(elem1.getAttribute('ng-app'));
+
+      // We would also find out the first element of the DOM which is associated
+      // with the attribute or directive ng-app in the following way
+      var elem2 = document.querySelector("[ng-app]");
+      console.log(elem2);
+      // Now we could see the attribute
+    </script>
+    console.log(elem2.getAttribute('ng-app'));
+  </body>
+</html>

@@ -1,10 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myFirstApp">
   <head>
     <meta charset="utf-8">
     <title>Hello World</title>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript">
+      /* ---  Example of an IIFE ---  */
+      /*
+      (
+        function (){
+          alert('hello world');
+        }
+      )();*/
+    </script>
   </head>
   <body>
-    <h1>Hello Coursera</h1>
+    <h1>Name Calculator</h1>
+    <!--
+    <div ng-controller="MyFirstController">
+      {{name}}
+    </div>
+    !-->
+    <div ng-controller="NameController">
+      <div>
+        Your Name is:
+        <input type="text" ng-model="name" ng-keyup="displayNumeric();">
+      </div>
+      <div>
+        Total numeric value of your name is: {{nameLength}}
+      </div>
+    </div>
   </body>
 </html>

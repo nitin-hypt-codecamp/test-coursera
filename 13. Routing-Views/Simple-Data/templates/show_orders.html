@@ -1,0 +1,10 @@
+<h2>Show Orders View</h2>
+<div class="container">
+  <button type="button" ng-click="getOrders()">Show Orders</button>
+<ul>
+  <li ng-repeat="item in orders">
+    <b>Id:</b> {{item.id}} - <b>Description:</b> {{ item.description}} -
+    <b>Quantity: </b> {{item.quantity}}
+  </li>
+</ul>
+</div>

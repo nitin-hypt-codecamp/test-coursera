@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Async and $http</title>
+    <script type="text/javascript" src="..\angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body ng-app="ApiApp">
+    <h1>API service using $http</h1>
+    <div ng-controller="ApiServicesController as apiCtrl">
+      <h3>List of films</h3>
+      <button type="button" ng-click="apiCtrl.getFilms();">Get Star Wars Films</button>
+      <ul>
+        <li ng-repeat="film in apiCtrl.films">
+          <b>Title:</b> {{ film.title }} - <b>Director:</b> {{ film.director }}
+          - <b>Release Date:</b> {{ film.release_date }}
+        </li>
+      </ul>
+    </div>
+
+  </body>
+</html>

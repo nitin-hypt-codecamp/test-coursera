@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>AngularJS Routing example</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+		body {
+		  padding-top: 10px;
+		  background-color: #F5F5F5;
+		}
+    </style>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+    <script src="../angular.min.js"></script>
+    <script src="angular-route.js"></script>
+  	<script src="app.js"></script>
+
+  </head>
+
+  <body ng-app="RoutingApp">
+
+    <div class="container">
+		<div class="row">
+      <div class="col-md-12">
+  		   <ul class="nav">
+  				<li><a href="#AddNewOrder">Add New Order </a></li>
+  				<li><a href="#ShowOrders">Show Order </a></li>
+  			</ul>
+  		</div>
+		</div>
+    <div class="row">
+      <div class="col-md-12">
+          <div ng-view></div>
+      </div>
+    </div>
+
+    </div><!-- /.container -->
+
+  </body>
+</html>

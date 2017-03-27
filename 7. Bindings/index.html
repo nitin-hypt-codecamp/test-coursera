@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="BindingApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Bindings In Angular JS</title>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body>
+    <h1>Binding</h1>
+
+    <div ng-controller="BindingController">
+      <button type="button" ng-click='showWatcherCount()'>
+        Show Watchers Count
+      </button>
+      <br><br>
+    <button type="button" ng-click="logNames()">
+      Log Names</button>
+      <br><br>
+      <button type="button" ng-click="logNameWithSal()">
+        Log Name with salutation</button>
+      <br><br>
+      <button type="button" ng-click="setNameWithSal()">
+        Set Name with Salutation</button>
+      <br><br>
+    <div>
+      Name with salutation: {{ :: nameWithSalutation }}
+    </div>
+    <br><br>
+    <input type="text" ng-model="name">
+  </div>
+
+  </body>
+</html>

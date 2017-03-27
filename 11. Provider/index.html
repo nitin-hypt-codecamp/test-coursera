@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Provider</title>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body ng-app="ProviderApp">
+    <h1>Custom Service using a provider</h1>
+    <h2>Service Tax Calculator</h2>
+    <div ng-controller="ServiceTaxController as servTaxCtrl">
+      Amount: <input type="text" ng-model="servTaxCtrl.amount"><br>
+      <button type="button" ng-click="servTaxCtrl.calculateTax();">Calculate Tax</button>
+      <br><br>
+      {{ servTaxCtrl.tax }}
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Digest Cycle Example</title>
+    <script src="../angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body ng-app='CounterApp'>
+    <h1>The Digest Cycle</h1>
+
+    <div ng-controller='CounterController'>
+      <button ng-click='runningCounter()'>
+        Running Counter
+      </button><br>
+      <div>
+        <b>Regular Counter:</b> {{ counter }}
+      </div>
+    </div>
+  </body>
+</html>

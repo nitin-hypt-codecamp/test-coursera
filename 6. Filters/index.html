@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="AppWithFilters">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello World</title>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body>
+    <h1>Filters</h1>
+    <div ng-controller="FiltersController">
+      <div>
+        {{ upperName }} <br>
+        <!-- Full Name: {{ getFullName() | uppercase}} -->
+        Full Name: {{ getFullName() }}
+      </div>
+      <div>
+      </div>
+    </div>
+  </body>
+</html>

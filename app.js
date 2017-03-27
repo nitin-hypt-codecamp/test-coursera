@@ -4,7 +4,7 @@
     angular.module('myFirstApp',[])
 
     .controller('MyFirstController',function ($scope){
-        $scope.name ="Nitin";        
+        $scope.name ="Nitin";
     })
 
     .controller('NameController',function($scope)
@@ -13,8 +13,8 @@
       $scope.nameLength = 0;
       $scope.displayNumeric = function()
       {
-        var total = calculateLength($scope.name);
-        $scope.nameLength = total;
+        var totalLen = calculateLength($scope.name);
+        $scope.nameLength = totalLen;
       }
     });
 
